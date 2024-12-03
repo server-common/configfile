@@ -1,5 +1,5 @@
 server:
-  port: ENC(bH0UGgoiTTXNZ0OXnnhrqpX0//Z9SyjPJGOR8T76uzgtWUoSZ8/rZzSdseW+rlTP)
+  port: "{cipher}f7276d41d6e62d752e7ae0ce8ac3f9448791f27b546786032ecd1fa5c6e3fc81"
 
 spring:
   datasource:
