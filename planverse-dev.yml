@@ -1,5 +1,5 @@
 server:
-  port: "{cipher}3265a00fe1314efa888961a73b4b735da9775d9388f33eb1538fbc9ec5059c46"
+  port: "{cipher}bf956972a5490bbf9833ef07b54c0a93b675a7350bb5c531c87ea223673dcf0e"
 
 spring:
   datasource:
