@@ -1,0 +1,45 @@
+server:
+  port: ENC(T7H6oiKSwROlJvwVfLwlM/rLZy1sgEJ1oopEv9/unwFdrMqd4UXf/NzMIu7vfuHi)
+
+spring:
+  datasource:
+    write:
+      jdbc-url: ENC(Q3EXtTqYpNi5yup6XxC6wjsM7txaKurTKZIKE/XDrUXBD2ZvqkpJEtsEcHeQyMXMy73L4s1xwBzNgVMY1sWpmd61MB3qKLagZ/6opG1eRRaXvre9jyMtQnDLx5/wViNU3A6IzimP0S4DG0gwBD2pe1swYDMPs2jivCvJtUiZVjDdIWzOcdXEcty3LyHQ02SK7Z96q1xixrMuW/hdGW56Ig==)
+      username: ENC(LyAT19Ux6pUWFeUM73xsVFw2uzxANGwz3RR/P7BmuGarEkT5EsLvmljFRVvmK0xj)
+      password: ENC(oOs1E1cTIHI83jcJSB6IzBdFQuS/6kHCMUlZ8RqBJICRgjAV1ATbXsICvzi0sZpm)
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      minimum-idle: 10
+      maximum-pool-size: 20
+      connection-test-query: SELECT 1
+      pool-name: WRITE-POOL
+    read:
+      jdbc-url: ENC(+4yxaiPBIDOipqzci+1GBgX8ObiWOEfhC4AkmC+RtPKmLBlSZv2LmKP1G4Ey/x3j)
+      username: ENC(IIjs7umWCBjvtP9y5cXEuBSn7wa7RW8bJoZ4Dym/pEnch2fSWxyoF/NIDiPWyVoPq2pmS5dldj/UBRgm0VDhuFZkyFBzArU0yGruQCENbVEz+Xph6Z3GyZrILeWXOnpkpC1cJfeEEoCycLh566808dbOVNNmRXeJWrJWhzLow73A8bNMxE9kUeCQluwyl5xbsnVm5B97NUuvcZYrTZkyig==)
+      password: ENC(WY4tRMDtucVDVmoi1/ovzA5gKm0H9v4CrTfjjdvJukJM0y3NMBkYHZQMrmf6Ndoe)
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      minimum-idle: 5
+      maximum-pool-size: 10
+      connection-test-query: SELECT 1
+      pool-name: READ-POOL
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: false
+    generate-ddl: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          batch_size: 100
+          order_inserts: true
+          order_updates: true
+  data:
+    redis:
+      url: ENC(BXeyt3/WJ3ZY+bO66rYyf2P/AepfcRHPZjsBpm4rKXJssRzw3JvpbaR5+zP2Qt7R)
+      port: ENC(31Hq53vJIBB4V57C083Fl/HU0Y8L0Imz77CVokdx+Okjigf5Pxuk6Rx1UO8myWzH)
+
+logging:
+  level:
+    org:
+      springframework: info
