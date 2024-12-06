@@ -1,5 +1,26 @@
 server:
   port: "{cipher}1094924401633dd7f7fdd045c3a92add66d6620c81acf81d3f0a91c4c4cefe78"
+  servlet:
+    context-path: /api/v1/
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    session:
+      timeout: 600m
+      cookie:
+        name: JSESSIONID
+        secure: true
+        http-only: true
+        max-age: 600m
+  shutdown: graceful
+  error:
+    whitelabel:
+      enabled: false
+  compression:
+    enabled: true
+  http2:
+    enabled: true
 
 spring:
   datasource:
@@ -38,6 +59,14 @@ spring:
     redis:
       url: ENC(A32vQNlFkXCsSZaiTUTRWgpr2kCQcbUJ5ScJD/GmkonzYSNgTysyZD5sz8zhO8VM)
       port: ENC(KM2nbreUrhkFtIbCSHBrf6Ij5JieuGBKXFA/H67XP2IJyWoa7ZJ4Fk7PGiMO+TR5)
+  output:
+    ansi:
+      enabled: always
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
 
 logging:
   level:
