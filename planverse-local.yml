@@ -10,7 +10,7 @@ spring:
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
-      connection-test-query: SELECT 1
+      connection-test-query: SELECT NOW()
       pool-name: WRITE-POOL
     read:
       jdbc-url: ENC(9wyJ0pol7ui4EP48G7E9Jl1QORG5MGrJMvTqXuOk/Tsv8MiPYrAkMyiKBL/MphHg)
@@ -19,7 +19,7 @@ spring:
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
-      connection-test-query: SELECT 1
+      connection-test-query: SELECT NOW()
       pool-name: READ-POOL
   jpa:
     hibernate:
