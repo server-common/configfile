@@ -4,18 +4,18 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(bReIjam9Sb5VBTo1Ze/bPAenX8W3hkMtOMEyTnsA8r1lXC1qrMAszZjGU5MZiDUGKPofMghrkXQ/QIkTy9a602QwCP261ifmwfodZOJdwVPnILQgzzaH8GDABDsg9ih1oqrCmZPaMs6bbphR3qOWLVQ6n68jsfR51BFJInZZyjcE9Y+g1faVRMiuG2XSaCbzSvZYY+v284AZfUBKHkjBgw==)
-      username: ENC(tJgRPUin2YIPmvR3Ock3WarHx31T5gwelRdAKs6Q0XRKx475rDFfM34U43xRUp7L)
-      password: ENC(QDP1E7NfuXswvdaHBsLQfqyvaXrgfwX3wLfertznkk6pkNrAC8weq6WhWdXi+XRV)
+      jdbc-url: ENC(vkQA4ctVoPw8oYuQ0DH2SjznFqHlJle9gP/MTENnzbKeUrE1f/cnXHLPaFUsX7+xfq0s185urO9EbII86XxP9/J3GimFw9fsy9GSHbKw+UJFKPa6RuzuxqMu+y4/u/XVLnOujoPNZK5yW9cEGHzkWO1Hddov6zLUE7r1Ovgoip7tLiIWHXqkqJ0wrfPTZerd0DEySz/VpVR/7NUsBr+b8A==)
+      username: ENC(JmWiSsvxi7JauOh0wOGYsSUtcAEy8JfN3j7VtaVMdMWIyh/ogQXyp+EtJ1PHMuBq)
+      password: ENC(mq9zHDMMwatOSUXgodxafCbmWmqasNaJAbshxiPXSi7JSzEa1e80mNsBl76IweUc)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
       connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(Tt9j3dgdEu21ldMuH28XYq4S4bdgpDrFqxcxT83WIu1Qjf0dBPpGlBkCK2/LaKDX)
-      username: ENC(By2IvAQ9/qWg6+EbJo9wjb2mbIB19uXmYS51HAhOq3y4bLHeI8KwOafVs4SOb1TiExBq4c9Kw6pQG7YLEUJx1TSQArfzIHqF9HVl29I4LgdLHyxTX9x+fTtS5wN/A3D46Wtw5anwaU1HUgfizDNkmNBjZSNdBnhPCufpvfBTH0d5r6yzfFnf4t13WSit+VX7fW7IpS3k2zA5ScJXQiD0RQ==)
-      password: ENC(f20wpDlpoHNhhIvXfl95RRJYJyceEKRXn4E1zdUpk7F5VdV3wNHU8PoyjO0J9Fs2)
+      jdbc-url: ENC(9wyJ0pol7ui4EP48G7E9Jl1QORG5MGrJMvTqXuOk/Tsv8MiPYrAkMyiKBL/MphHg)
+      username: ENC(kWi9+heRgRZ9GvDP6nvcbdTW5X35GtLUJxrs4ikCOBGC4IFgqwm3rdhjFPKBkNgxrSDLwO2Lrj8iW04bfhjssrYkIjvv+vS1w1xaI+8OavcxWE/hbTjne8cSRxC3r98JXMGKoTG+T3CqeudxYXXrnMGYMIvuC2x/VtZTGRXI+PwtTDjz5qnwQuP0UtDi2Xs/BrPJkKXae9q3+3NSgiankQ==)
+      password: ENC(QKtDfXeusP1CDOmZIcw5wIkNoM3QhIIdGB0gTHQ7HT6dN+FsCtt/95sH6u4g72xu)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
@@ -36,8 +36,8 @@ spring:
           order_updates: true
   data:
     redis:
-      url: ENC(A32vQNlFkXCsSZaiTUTRWgpr2kCQcbUJ5ScJD/GmkonzYSNgTysyZD5sz8zhO8VM)
-      port: ENC(KM2nbreUrhkFtIbCSHBrf6Ij5JieuGBKXFA/H67XP2IJyWoa7ZJ4Fk7PGiMO+TR5)
+      url: ENC(l0om1A6Z58253F5m/e5TED//O5wpzpxtk3dMoJ27vayCSMMtnLRoXanauVaXzUYKmgopZYELoslcbuf9vhm1Fg==)
+      port: ENC(9i5k/HSfvWIUmSd8D3Z9Kqk8gO2D+TVTDk7uqYdg5I+kruVZ3AgY1EybGWxGh2SB)
   output:
     ansi:
       enabled: always
