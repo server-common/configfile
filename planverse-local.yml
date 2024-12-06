@@ -3,7 +3,6 @@ server:
 
 spring:
   datasource:
-    driver-class-name: org.postgresql.Driver
     write:
       jdbc-url: ENC(vkQA4ctVoPw8oYuQ0DH2SjznFqHlJle9gP/MTENnzbKeUrE1f/cnXHLPaFUsX7+xfq0s185urO9EbII86XxP9/J3GimFw9fsy9GSHbKw+UJFKPa6RuzuxqMu+y4/u/XVLnOujoPNZK5yW9cEGHzkWO1Hddov6zLUE7r1Ovgoip7tLiIWHXqkqJ0wrfPTZerd0DEySz/VpVR/7NUsBr+b8A==)
       username: ENC(JmWiSsvxi7JauOh0wOGYsSUtcAEy8JfN3j7VtaVMdMWIyh/ogQXyp+EtJ1PHMuBq)
