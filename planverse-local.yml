@@ -1,26 +1,5 @@
 server:
   port: "{cipher}1094924401633dd7f7fdd045c3a92add66d6620c81acf81d3f0a91c4c4cefe78"
-  servlet:
-    context-path: /api/v1/
-    encoding:
-      charset: UTF-8
-      enabled: true
-      force: true
-    session:
-      timeout: 600m
-      cookie:
-        name: JSESSIONID
-        secure: true
-        http-only: true
-        max-age: 600m
-  shutdown: graceful
-  error:
-    whitelabel:
-      enabled: false
-  compression:
-    enabled: true
-  http2:
-    enabled: true
 
 spring:
   datasource:
