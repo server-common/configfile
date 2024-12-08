@@ -23,7 +23,7 @@ spring:
       pool-name: READ-POOL
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     generate-ddl: false
     show-sql: true
     open-in-view: false
