@@ -4,22 +4,22 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(vkQA4ctVoPw8oYuQ0DH2SjznFqHlJle9gP/MTENnzbKeUrE1f/cnXHLPaFUsX7+xfq0s185urO9EbII86XxP9/J3GimFw9fsy9GSHbKw+UJFKPa6RuzuxqMu+y4/u/XVLnOujoPNZK5yW9cEGHzkWO1Hddov6zLUE7r1Ovgoip7tLiIWHXqkqJ0wrfPTZerd0DEySz/VpVR/7NUsBr+b8A==)
-      username: ENC(JmWiSsvxi7JauOh0wOGYsSUtcAEy8JfN3j7VtaVMdMWIyh/ogQXyp+EtJ1PHMuBq)
-      password: ENC(mq9zHDMMwatOSUXgodxafCbmWmqasNaJAbshxiPXSi7JSzEa1e80mNsBl76IweUc)
+      jdbc-url: ENC(f2QxeEDSDJlAepHS5Xh85FltK0Ncre3bOA7fQXJCIgBt/5OxdYAriz/V6SEDPtAz6xCigUFz6ZgRMlwOJ95M/qTbCXdgratF5hOfxhnkbzCnqEVl83uCR6LG4iSBaMKVuHK/QoJBsc7bBJwZwIGKT8UKSVtFm6NmD+VaEhHm5rIdHeA5/+76qRvwfYNqcB0P)
+      username: ENC(Y+g+Mncoi5VdJ3bcMY7dQI6FLwzygc3XbVHDNwluE87Yft8h6FO2PhaAqxIxaxP/)
+      password: ENC(sq8m1b5/wU1bQAfYj4g5dmPyO+IhgwGPdMY+jVAXQpbE675+UoYNtpqEcfyUYwwq)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
-      connection-test-query: SELECT NOW()
+      connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(9wyJ0pol7ui4EP48G7E9Jl1QORG5MGrJMvTqXuOk/Tsv8MiPYrAkMyiKBL/MphHg)
-      username: ENC(kWi9+heRgRZ9GvDP6nvcbdTW5X35GtLUJxrs4ikCOBGC4IFgqwm3rdhjFPKBkNgxrSDLwO2Lrj8iW04bfhjssrYkIjvv+vS1w1xaI+8OavcxWE/hbTjne8cSRxC3r98JXMGKoTG+T3CqeudxYXXrnMGYMIvuC2x/VtZTGRXI+PwtTDjz5qnwQuP0UtDi2Xs/BrPJkKXae9q3+3NSgiankQ==)
-      password: ENC(QKtDfXeusP1CDOmZIcw5wIkNoM3QhIIdGB0gTHQ7HT6dN+FsCtt/95sH6u4g72xu)
+      jdbc-url: ENC(RoX33VppsQdgnBF/GrLK1L4NluzeZFT4ZgG9tWINZcaf8bxFjykR4zxaCKYBlVj7)
+      username: ENC(Kn8VKrW8c8SOJ/Ix8AW6rt+C/7caZjkRszho2tOgpM4LBjYmhxazNaZRhu/eQgrWl0SQZK0BwQ/Q2aA5KdQ3p1EN+c0MTdbgF2YWe17sSsf9kn0uORjcZ00YnvXlYhO/hJbiC4I9WTb5B7v4byAaQVBcnqxn8ETwlpKJHcmcGFeadLxAjTzaVYo3GSEGevSx)
+      password: ENC(XVd16EYIHbLk5SddqGlx6DFO0Cwkd30mz1CgzCb3eTkRo194pYEZ+3idCqE7t5hX)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
-      connection-test-query: SELECT NOW()
+      connection-test-query: SELECT 1
       pool-name: READ-POOL
   jpa:
     hibernate:
@@ -36,8 +36,8 @@ spring:
           order_updates: true
   data:
     redis:
-      url: ENC(l0om1A6Z58253F5m/e5TED//O5wpzpxtk3dMoJ27vayCSMMtnLRoXanauVaXzUYKmgopZYELoslcbuf9vhm1Fg==)
-      port: ENC(9i5k/HSfvWIUmSd8D3Z9Kqk8gO2D+TVTDk7uqYdg5I+kruVZ3AgY1EybGWxGh2SB)
+      url: ENC(4S4inZ1jtdfQsNRXzSQAQ+4nhuU3T/pijPeolbZ/gAadE6efcc/K10zdDGxRT0cTlcJcmbE4qWVKXvZT7/cj1A==)
+      port: ENC(m85SN+ivCps/f785XBuXrdt1rFqMtH9Cz+i0UKIY1F8+6Df77URhIFgTmvF5GrPJ)
   output:
     ansi:
       enabled: always
