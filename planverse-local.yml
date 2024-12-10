@@ -52,7 +52,9 @@ spring:
       max-file-size: 50MB
       max-request-size: 50MB
   mail:
-    sender: "{cipher}08555504cc413f87e6691a62bb86f0a2db4cb231ff99a2bae82690206cc5c64cfe51d1fdc4f8e9eedfdcf07c0ec3668e"
+    sender:
+      noreply: notice@planverse.com
+      notice: notice@planverse.com
     host: "{cipher}8857ed5c3ce07d6591cc1856f11dd65d50dc9e6da9ba0f0b97ca33dc6a003f811f20bf4af3d2cdedfae46d030f69afcd35c3a4d399843a55ba417f25736a3677"
     port: 587
     username: "{cipher}fd28a103b54ebf5aa08714e9d92a8edf2a9708cffc58af198793508baf9d28f3438be986f4aedf8c19ce99d16367fae925c4b9d1362be60f60962d2b3967fa175ef674a06f879583c751967fd8294a5771c09e62320d26b4ec0a0a043962219343a588f5e2a047687f6c054055302214e8cb7928c4ac2d394b3d9b8c3b7d8270714c76ff51d258ce6ec1a72ed7fdc118ca36423c5859f0c663453e34de9cdf1a63d6c5dc24cbe3dc1fcc1038405c229f4c389f5a4ca5b0753ad1ff0896dfe138"
