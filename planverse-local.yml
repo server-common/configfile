@@ -38,6 +38,11 @@ spring:
     redis:
       url: ENC(4S4inZ1jtdfQsNRXzSQAQ+4nhuU3T/pijPeolbZ/gAadE6efcc/K10zdDGxRT0cTlcJcmbE4qWVKXvZT7/cj1A==)
       port: ENC(m85SN+ivCps/f785XBuXrdt1rFqMtH9Cz+i0UKIY1F8+6Df77URhIFgTmvF5GrPJ)
+      lettuce:
+        pool:
+          min-idle: 3
+          max-idle: 5
+          max-active: 5
   output:
     ansi:
       enabled: always
