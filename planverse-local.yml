@@ -69,8 +69,3 @@ spring:
           starttls:
             enable: true
             required: true
-
-logging:
-  level:
-    org:
-      springframework: info
