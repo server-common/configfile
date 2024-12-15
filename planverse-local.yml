@@ -4,18 +4,18 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(+YpIsyqenaeTB0i0Z3nrs+m66ZUUGzWF26r9qIlczkDPL7r2CtCyWPQW4217Gt9tXa618LNph8V65Ch1dBS6RhE4IGMvKORbPEmZ+CVvIV0qHSz6H7d/XYj26eM1oxBLxqpUVMYDxgIVea864MNJMpjhbxhnbhbR/GCzj6/tgAEkJNiH1730TMoN/qU8T41qXDSA1ZUje6U5neriFjgQsQ==)
-      username: ENC(0qtYDFaQBk+Uhfcbxp3a1F0SNHRKyZ+M/kIg96rsFfA2fjvzw/o0Juz9yvAb3A4s)
-      password: ENC(CzOax9cLSxp5ffw//9BI7vkmrzSSiitrNfnHQuNp3H0x2cW6f5Dwt8XVuPB/GAx9)
+      jdbc-url: ENC(gTRm1XuGbANur+B5IdpP/4pXXgJKTYFlGvK1/5ljzGyk2k9vQkHJ68JxotyAuz0lc4L0HOZWy1kIF7pSY2JO2dpePJi3LesMRH/SPU8wCm6tWw+T79WHOaORV89CuPlZdpMguHgofe4cADsrmrBUIAC98fmAy95CQ7jqgSKsO1vkqnLzUDsxzFZfayFesFbpkswj9m/t78VN3f/cf14mNg==)
+      username: ENC(ziplBGoODdIDPQwEC6zvstg1gN3ODB7ducILYpysUFMVQeZai7EvTjWZAQaHUIf9)
+      password: ENC(xt7Q+mVKlRNWKmLL9Ngq9Mrhmaaigq2SzM8kFaaPrc/6UREOxHd6xczJWeLyeM0e)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
       connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(kH1IJg/0rc9tyowEsyJZFKC52+5bqrLxy7VIfYP0OEJSFa4jj3eYNL8+DuyE2p3C)
-      username: ENC(olysXM8VoDTr2iz/47BONE6MCpfYt3WetBUbTn3WXPVpvmdipYJeWHhof3Otpcj3RKlWySMsdql5clzJPqMShIg/gz7+0u5NZkZYmarqYKeqiR/ho/y8ihd3oULOCwazaZosg2+Vck9KnZZsiYqp1xjSF27WEW5cVJDocaM/Ia/gAQikCTDXDa4WIdwktsLDWaovi0DDi7GBUDzfs++53g==)
-      password: ENC(4qKsa659HURrpc6fifKKe7ITeIuJDAfkK4RoXJc/iOzZ2eTia2LYLjTlvFKL6vse)
+      jdbc-url: ENC(785QNAyyoJjS2/xY7Gp9P5d9qt+iMq55aizJzKtnvXouBnvO/YMj28XOAhyEWfDg0DM4iio1Nz8MJxueL+2ERnhnrvfgiEzswt3bAY7EFMpoY5YpLxf7xNcFqd4IOnBEiTyXRNSnUd5MyqTJkfaYewJs0WA6jq8g3tndB8KYmL/XpPeHRlY5gNcKIQ7j7vNP67hxhCSJSl+eUk/hIi+gyg==)
+      username: ENC(+zRfT+M5VnX0G0rL8J9aRxWS41NwfD9sSNqgIQ+ImsDEv90/1yisNaPWuLhD+WA5)
+      password: ENC(j0qTRrgE3gHxHAAuDGkPqqHF20KPmua5oR8F+pbM4Tl2tlHuBZyQ+Ac8DqTlaSam)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
@@ -39,8 +39,8 @@ spring:
           order_updates: true
   data:
     redis:
-      url: ENC(czFuSGN2//sidqBVV2OZPBVOd14M9wNMaeUJbDYLw2uV7P4BIJQGwPfWWt/LvlnK9yydI9epVMJLU/rPbqaqtA==)
-      port: ENC(gTwPIW9XgXCxOkk5EYDOgAI3c+BESEysHW6qond17LnsrDp/LCYJezPRPU0rqpTM)
+      url: ENC(POSC9yBwRNXEP785lmv4p26ZuTGronywiPfKLsNCzOh7AW+MpzhJNKw34yYGA0WpAdqg3ro5ZohCA/TeNqokaQ==)
+      port: ENC(1dhcuJ/vAQDkgFvRAre+b+N5eI2S4SvKe9qwebRH9U/Ex4D2j20C6eF2DLq+AB5Q)
       lettuce:
         pool:
           min-idle: 3
