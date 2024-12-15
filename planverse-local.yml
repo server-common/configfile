@@ -29,6 +29,9 @@ spring:
     generate-ddl: false
     properties:
       hibernate:
+        naming:
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
         format_sql: true
         jdbc:
           batch_size: 100
