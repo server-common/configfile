@@ -4,18 +4,18 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(QhR5cTiYPCnFdPRK3lvv/sG7wySmKLbeNOAGF//qBluh3fjtHl9amnt4ySGGPQr12j15IOFl1eR4Do378wEZuZzsLstO2JDZyCg4vtZfw/iHuViW+YQscmmAaSk6LLNiX/FSU5xaar8f7DUwwHrRIG0uWePKN5GHOXAxHHl6RdJxc2pTeI/k3SuNPOf/kwkRLj2SbEeJ9NwQqYlVCWoZOw==)
-      username: ENC(Lq/BTQ4M+X2HV71xVW3jGUrzPuzugE3DYv6bHv0EIQ+tt5MOWRB4DpNpDbZV2a9g)
-      password: ENC(c+u6h92QSaWdj+3aRKE7S1xy2XZ1sZKtoN/o29Q8BPF/dbH87RW60JQnHjscg2RU)
+      jdbc-url: ENC(jLPA+XTMOX7CiteClv+bovXFuPoGyccz0265u3wpS6NefKj01lMKFe0XjDorEjvoT5nRt11lAThYhVP6Z7xNRjm/Zs4EOPKvedAqhnSj8Xu74rJwIpkmtH0kulrnD5AwhoKfUX86ysfD3LQP1sOU8pyQEjWn6l7OoXk4HB2/pI7f0Xjii5ToB0x5igIXuEWUdYMiuDBAkFPuGVtlt3CWdw==)
+      username: ENC(RU7GHBOx/4BrU6z1drlklm+MjvB3mlCuVtQBUN5oMk0cCUtGBfV3QOs6HnB1fc0k)
+      password: ENC(PTB5VXs+vdI58owg637HyE4j5uTC9uuUGF/abMVHBYZp5c0ZVVnfQEcNAEeBoi31)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
       connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(C9c8pBJtdm/cq/YoHc2VJr03cR+PN9s4mfT1ktgSavIFlUr8LSHf9XaNbgpNJRwv)
-      username: ENC(YNvn5fKWkVd3F++/fnqxC4dxIFleASjzst1VK1XL17Y9eSLh6B0f0DTToS8nhXE/g+XbV1jvBH1IVehD1o3GipaNdiy0yLoZcIC07jj94u3Z2DDPhhHAxh+lDV9Q0z7WV12G6EtrI1j2eD0HlrSO4KafUzUSSlOSave4/my7xXrjbKCa01MCFmkO/pDt37h340Bdxvb743YqSaroVeLi/Q==)
-      password: ENC(WbCus+3AWzCfU4J2ECdM0FUvLAI3cZBEFC6tgUnmGDr172+HGV1yXwQkVPSJboRp)
+      jdbc-url: ENC(MnkCYFSnv0S5uawBcRsBPm8nBMzKbz9LMeJ82vp2MoiUPFGeGpONiwwgC0g8NpG/)
+      username: ENC(QJAdpQlRaAvkjQF5ISxSBq9K41iXEIM5N3spfIeN7fftVI0KsA+KM2xAEd1B5jCMpIj7sLUUhlEp/bIv7dlMVIVA8IgU4h2wDd9mdfFn6JhbJAVlah3UAoeCTOzO1CfFvnszJ1PIT8YtVCjoLSX+9o2h0SW+g3jZLi73CzwCpKYpHF4eEIH1YaZ3dJveWLmZN54lSlODUXhtPyn8bNB/8Q==)
+      password: ENC(ttSXJk3vubugg3LIQFWAqk2f9Iz8rVq8UngJydIPEe3uD+yktL2EcW+rMJJdykIw)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
@@ -36,8 +36,13 @@ spring:
           order_updates: true
   data:
     redis:
-      url: ENC(PmXXIT23dTLLkq9S3GGB76/tjlCenYLBNbHbgY037CUxTmAVTeeTsk0U4oKKear+)
-      port: ENC(oQ00lSPsq43XW9Dtts+X2vENU1wHaPTUSewuGfB5lRp0M6+EhVBeBRDzIT6Lcoyt)
+      url: ENC(eHuQha7GTOp+GIPkZcBk/cGjaCeDAzzYykGUh159NcR7PKNavNvqPdqI2sAQBp/6KmEKiwCIxPysc2qerp4LhA==)
+      port: ENC(gKf7enQcGjxn5U1iJNwPwVx53Ly9ABpf3g4/tCqk2u51qkPoOKt3sQIfRU7uG4HK)
+      lettuce:
+        pool:
+          min-idle: 3
+          max-idle: 5
+          max-active: 5
   output:
     ansi:
       enabled: always
@@ -46,8 +51,21 @@ spring:
       enabled: true
       max-file-size: 50MB
       max-request-size: 50MB
-
-logging:
-  level:
-    org:
-      springframework: info
+  mail:
+    sender:
+      noreply: notice@planverse.com
+      notice: notice@planverse.com
+    host: "{cipher}8857ed5c3ce07d6591cc1856f11dd65d50dc9e6da9ba0f0b97ca33dc6a003f811f20bf4af3d2cdedfae46d030f69afcd35c3a4d399843a55ba417f25736a3677"
+    port: 587
+    username: "{cipher}fd28a103b54ebf5aa08714e9d92a8edf2a9708cffc58af198793508baf9d28f3438be986f4aedf8c19ce99d16367fae925c4b9d1362be60f60962d2b3967fa175ef674a06f879583c751967fd8294a5771c09e62320d26b4ec0a0a043962219343a588f5e2a047687f6c054055302214e8cb7928c4ac2d394b3d9b8c3b7d8270714c76ff51d258ce6ec1a72ed7fdc118ca36423c5859f0c663453e34de9cdf1a63d6c5dc24cbe3dc1fcc1038405c229f4c389f5a4ca5b0753ad1ff0896dfe138"
+    password: "{cipher}5ddcf893c94d7cf35c54addae9e3e6ccef96681cca1558401378185a48fe15f50ced56f6ff0a2140a95887882551ffb4"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          writetimeout: 5000
+          connectiontimeout: 5000
+          starttls:
+            enable: true
+            required: true
