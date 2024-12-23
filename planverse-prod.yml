@@ -4,18 +4,18 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(Q3EXtTqYpNi5yup6XxC6wjsM7txaKurTKZIKE/XDrUXBD2ZvqkpJEtsEcHeQyMXMy73L4s1xwBzNgVMY1sWpmd61MB3qKLagZ/6opG1eRRaXvre9jyMtQnDLx5/wViNU3A6IzimP0S4DG0gwBD2pe1swYDMPs2jivCvJtUiZVjDdIWzOcdXEcty3LyHQ02SK7Z96q1xixrMuW/hdGW56Ig==)
-      username: ENC(LyAT19Ux6pUWFeUM73xsVFw2uzxANGwz3RR/P7BmuGarEkT5EsLvmljFRVvmK0xj)
-      password: ENC(oOs1E1cTIHI83jcJSB6IzBdFQuS/6kHCMUlZ8RqBJICRgjAV1ATbXsICvzi0sZpm)
+      jdbc-url: ENC(QaCfjQRIZAt7ctIWxrVhdAcTKj6f72ekrry75/TAzdVdPAnHO3eTLqP2sJeno7iAW89uIbc2KU9muQG8IGsnwlrsb/qIeBoAaCYC8ns5KFhEfUgUTbEvi753Ogj5EkE8LQd8iv7JDzBJQvL/uQHE5YIAqUTHAC8ZQzBIwOfEDlH8aLthdL/synCrFqPZoSIM)
+      username: ENC(iToqZih0kuXzprY7eYAeVZe1vrueGcS/fbT3uevqikpArA6C8ZTrOX06/+ez6Hls)
+      password: ENC(2wAghzxqBveZsM91Eo8jc9wQjpWz/r5ueqDzo0y0TmbclgYvWm+4L5bP8UPnfgD3)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
       connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(+4yxaiPBIDOipqzci+1GBgX8ObiWOEfhC4AkmC+RtPKmLBlSZv2LmKP1G4Ey/x3j)
-      username: ENC(IIjs7umWCBjvtP9y5cXEuBSn7wa7RW8bJoZ4Dym/pEnch2fSWxyoF/NIDiPWyVoPq2pmS5dldj/UBRgm0VDhuFZkyFBzArU0yGruQCENbVEz+Xph6Z3GyZrILeWXOnpkpC1cJfeEEoCycLh566808dbOVNNmRXeJWrJWhzLow73A8bNMxE9kUeCQluwyl5xbsnVm5B97NUuvcZYrTZkyig==)
-      password: ENC(WY4tRMDtucVDVmoi1/ovzA5gKm0H9v4CrTfjjdvJukJM0y3NMBkYHZQMrmf6Ndoe)
+      jdbc-url: ENC(xtyKqHdMCMIiK+7A3UVMh3XyrYUvtvkJb8D/ylHmkMyPj49pNPWEhX2OiSl/vA3Yj70ppK7N3ZTliMfIfXdrp1w30DazoKPNeegp0gC8q/UnE2yF0to1CnRxlEEGU1ebmH4i4Lml7VvyiMJzXuTjcgpTPM9sdRKvJPDMtMm7+pYa5AU0+j0lHpj+1XAkGI7c)
+      username: ENC(JaxcpXhknYhJTfd04Vaw/nxWFXvV6+uCIKT8NggYqReju6yHkzIe4DWQW/soxNvs)
+      password: ENC(4EcjquJql1iMwj5pP1IYU1XTSkNwaWfCJ46Q67UXa2Dufav6rJoQyI9TNhgnPEXJ)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
@@ -36,8 +36,10 @@ spring:
           order_updates: true
   data:
     redis:
-      url: ENC(BXeyt3/WJ3ZY+bO66rYyf2P/AepfcRHPZjsBpm4rKXJssRzw3JvpbaR5+zP2Qt7R)
-      port: ENC(31Hq53vJIBB4V57C083Fl/HU0Y8L0Imz77CVokdx+Okjigf5Pxuk6Rx1UO8myWzH)
+      url: ENC(hhLCUWs1sznH3aUyg3RoSvcMn1XdBMm5prfK0+cK1GkAhAPYCxu+SScKrKRbhEEQvtHu2UlHOV72tLM7WAtW/g==)
+      port: ENC(/cRfIT3C7WpjTAIwiOxGmgsldFePq3W+9KgNUuRKmudmgErxZuH3Y7t0aSo5FOPZ)
+      password: ENC(oSgMVi0ibt9Uo6BJsIIpBZAg7MPQCbER9SzCnE00v3aTT8kdOk/MPLw6EqsF4x6a)
+      database: ENC(eKjz/bosaXIYRaW6BegjaVhj/Gz0MPkjL4VH/xsvJjqRvaczskSlKzssrYvB8plc)
   output:
     ansi:
       enabled: always

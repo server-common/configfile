@@ -4,18 +4,18 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(tYTGlPXMkcNcvePL/obRXg6ay13SRyDktie/KsxcmB1M94Mw6DawhggYU6t3AllYnXk7/O3CcMZti9NMu9Rqa4mYzOUmKzzoHUuf4qeS3rAg/OsRNRejpPojCdYLmCH3KwSldlod7T13LbHPiSm0zjMtmRdVO2cokrL5WU9etlaABKu2Pa1EGXPxgULrpOC4Q19h5FluV62CNlwXILC2vw==)
-      username: ENC(NE6lbs2Sz/f3ipAiDyT29jUnMRfaHpS9LubMcOyYwB75hFILYpmq6qm0HOzKDDtC)
-      password: ENC(z9yFWhYKM1m0pI/jsV/9Rw8GqIe243De/SlBg+ukRLckLIWQi24PmNDUjSuj61n4)
+      jdbc-url: ENC(WPDYBqB1QUyhUEme1WiEvxFwxScvdLQCSMFu4PgeG5D3pKzxZm75ikaW5Tode8qA1UpjaYb2v0FYc0YrFNe28b0TyGlcw6GeahZ05HYLMSIPfX7jnrO3b2nIUqhIAJ1w5uiovn2srcmGLmrPFThksNuYdmGo19pNxZ4uW8p6aiNZzJHV5N11C/I1ZlOpp1BDuZM0LG/l9t7J1nPAlGCYWg==)
+      username: ENC(lnsjleWQI1y3MJbtStcwOosqeBKruRwpSKgj4D6i0pFLmxkADziITEiws3UIRut0)
+      password: ENC(awhKrZ/7NRxIIRhAtYoSHGzCD+3DDANEPTr43R3i3/66aMOKYCyYuO/vO1WNFhxt)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
       connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(T1mb1DbJTYItHr3VzjPgP+pDPzeAV+23CkmcBJN0rVREAHkLY+2oRTdvWSNdCd5LiKAoVfthJxxTTSqBHj7nqZEdE3qauDAteMYVE5/19MfN80R3uriIBsezoxi2xC6HRLNtY+EqnsKHCBYr6Oe4z7H/idtE6C8RBqR26hpAYJ8k269GsM+M70GU1jaMCIMH5eKoYNyT1pzTdfCUZyo/BQ==)
-      username: ENC(dCyfuj6NuUXe9gsLyP+GaXoCEU7qNKuT2wObatHue7bttfEFHEHPrbzUViwxMbzM)
-      password: ENC(q9yRmPASGFgh99SqRm77LM14glpu6b0AGW2eefbC3vtFrbsaSkX/zjdJ9x7nCxxE)
+      jdbc-url: ENC(YQP1q52vmQwcf9WGKWiLEX8j6zIeJjs2N84tKpWqMfSWo5pTn3eUszHKhN/aK6Pf1jtxQ+WDJXrpnXkIGNk785gSZhMhkwj2Drsu1iO8GCWNL7p79d52Fx7NefZo7PoVCceWFI4TELjwWLzlYNJOxmWXYov34cgcjzBpKXSruTecQ3Q2NwFkeijkpiko56AwASoQbYrMGvKyNLd4liFr9A==)
+      username: ENC(n2lZmcjQo18UzGbHSInQdvDWShglDYngjefYJgyZrVhdPVl8gs3S1aRJtDDwQhDE)
+      password: ENC(xmKqKPOYqZaSEE9s8J3ETdD6roRZ8/1SrHoZYH6oVrY4DwKpYUxR7nY4oLM+ShXl)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
@@ -36,8 +36,10 @@ spring:
           order_updates: true
   data:
     redis:
-      url: ENC(4vi/XFYZOgd6RuU4LDj64LoW8Of5xCPXsltxdf1k+R9XrVsw9IIBpmEmKctOs2SrtYqhBU1SLuxr7gZfGKH/iw==)
-      port: ENC(IFYmxg/VN49du5PP7nXwjxGako+k/jGI1wtdPBrzgpaIR8aGZakieNybePRhahsZ)
+      url: ENC(FA49qMQniEQWUd3quA7b3X6u/0Px6Pf77kEiS7X6tdwXY6eFfan48XwRN4/aZLJkexSYF3Pw0x2PXYUFkCyeFA==)
+      port: ENC(uGt+mgDylWFDvYZIuD9PQl22KorNtZynmJhMK5XXVQ83wFWk3oID7ILEntqoHuDN)
+      password: ENC(jLRt/FgDRlut5z9KEPZAp9Bz/iX4Ldw4mUFmbhE7KErSSL7Wfrl2Em5SNkaJ24Re)
+      database: ENC(qX4v7rqTJ8U3VjhAbMb0ayCWDrqufGU8vS5Uwga751IXrQFzjpp3P8okY0d/WXzN)
       lettuce:
         pool:
           min-idle: 3
