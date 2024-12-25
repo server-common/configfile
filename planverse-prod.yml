@@ -4,18 +4,18 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(QaCfjQRIZAt7ctIWxrVhdAcTKj6f72ekrry75/TAzdVdPAnHO3eTLqP2sJeno7iAW89uIbc2KU9muQG8IGsnwlrsb/qIeBoAaCYC8ns5KFhEfUgUTbEvi753Ogj5EkE8LQd8iv7JDzBJQvL/uQHE5YIAqUTHAC8ZQzBIwOfEDlH8aLthdL/synCrFqPZoSIM)
-      username: ENC(iToqZih0kuXzprY7eYAeVZe1vrueGcS/fbT3uevqikpArA6C8ZTrOX06/+ez6Hls)
-      password: ENC(2wAghzxqBveZsM91Eo8jc9wQjpWz/r5ueqDzo0y0TmbclgYvWm+4L5bP8UPnfgD3)
+      jdbc-url: ENC(Xi4VAgprAB7Iub1P0qv/hdYsiVu1tHNGES1+B93CwTWXpxBrz2sie6wuhmtzSlQXz2dGra2NX4mY/5DlXdiuL5BwQd2ppmwUpe862vHGzRTOTSMC1aXwt2+ZnYCsOJ9CuV249uInLczWq6D92el28+sYKGQaNTVMa25aEH6cSCRREIiMTXaJRWDXq1Ogf/8J)
+      username: ENC(N/KaP8ADFFRlpVcdjfB/g9lGDpU+NmA3LXl6jlKDkR7fmptMHY6heSqb4ZgvFvS+)
+      password: ENC(RKcvVcGcJZtzuPplJtPW7m67Y7emTG+/LuaZ39ItvHTTedgLxIhkvONRyULvAnGV)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
       connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(xtyKqHdMCMIiK+7A3UVMh3XyrYUvtvkJb8D/ylHmkMyPj49pNPWEhX2OiSl/vA3Yj70ppK7N3ZTliMfIfXdrp1w30DazoKPNeegp0gC8q/UnE2yF0to1CnRxlEEGU1ebmH4i4Lml7VvyiMJzXuTjcgpTPM9sdRKvJPDMtMm7+pYa5AU0+j0lHpj+1XAkGI7c)
-      username: ENC(JaxcpXhknYhJTfd04Vaw/nxWFXvV6+uCIKT8NggYqReju6yHkzIe4DWQW/soxNvs)
-      password: ENC(4EcjquJql1iMwj5pP1IYU1XTSkNwaWfCJ46Q67UXa2Dufav6rJoQyI9TNhgnPEXJ)
+      jdbc-url: ENC(gQ+t6PudAcHcz2BPp4Ps5dz526QVHzsy93JDIwKgCx3SEqH6svRC7aVwhcAh0b/1MNY8zyAqpXaSLTUPHMDdvEOqmmMzk6t7sMRsWaN/DsYFOdoEnL789npZi/svO/lNXIQTEO/pwVNrv1FX8+LypreviRjdaZqg2Tdi9QL7UD7BKydUkjppETHIKA00aPfC)
+      username: ENC(ol7mAckJTVs+HWNzVYJzXeJ2xsTWVIo/d4k1nriSqrxZLOqXxNNhtIMw9chmZHYP)
+      password: ENC(ldlIzmaJhDH/tBTsacOQWVg3NJLj0famdmWobOjAV+MjhC9lV7sUQ14TB1Y94Ypy)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
@@ -29,6 +29,9 @@ spring:
     generate-ddl: false
     properties:
       hibernate:
+        naming:
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
         format_sql: true
         jdbc:
           batch_size: 100
@@ -36,10 +39,15 @@ spring:
           order_updates: true
   data:
     redis:
-      url: ENC(hhLCUWs1sznH3aUyg3RoSvcMn1XdBMm5prfK0+cK1GkAhAPYCxu+SScKrKRbhEEQvtHu2UlHOV72tLM7WAtW/g==)
-      port: ENC(/cRfIT3C7WpjTAIwiOxGmgsldFePq3W+9KgNUuRKmudmgErxZuH3Y7t0aSo5FOPZ)
-      password: ENC(oSgMVi0ibt9Uo6BJsIIpBZAg7MPQCbER9SzCnE00v3aTT8kdOk/MPLw6EqsF4x6a)
-      database: ENC(eKjz/bosaXIYRaW6BegjaVhj/Gz0MPkjL4VH/xsvJjqRvaczskSlKzssrYvB8plc)
+      url: ENC(4NOocJncW4icT414//NhUwAdK1sdFeE3Eci9jwJExWOQtFlBielLtG45Q7KGN/P3wCjqlF3VDo6dqSxQFk03Qg==)
+      port: ENC(zsbLXaL/JG4yA5K+HmSh1giTOyfCfwZgL2HhW16ywfWaGtmnZuhwQ97gHnk8sM3E)
+      password: ENC(cNcPx2HYKJW6Vx/naGWVdbvF+wtyhPXQrWRN+fkUxhzZrCUTAp9K+cyztnL0qbjs)
+      database: ENC(USVwN718gpJwTfTTJpPb+w8YadgJqeXUznk4+fU0MPHlKkLVLLDcSvwJtIArX7rR)
+      lettuce:
+        pool:
+          min-idle: 3
+          max-idle: 5
+          max-active: 5
   output:
     ansi:
       enabled: always
@@ -48,8 +56,21 @@ spring:
       enabled: true
       max-file-size: 50MB
       max-request-size: 50MB
-
-logging:
-  level:
-    org:
-      springframework: info
+  mail:
+    sender:
+      noreply: noreply@planverse.com
+      notice: notice@planverse.com
+    host: ENC(twK+inRNDGkGcfRoqLEJ1dFsjGnbgXOgq59lys7z+VVfdXgBXtcYUAlLS5w4q+2+q9IA7M+jXlDYTsBAZk03H2Xxx8+sILO/DcLDvA9uYQY=)
+    port: ENC(uqttfvZ3Irb5f0n95u6LV1/iuQSA5W27c6s0K6Q8LnhnZbKiqARKl+kzUPZNtOXR)
+    username: ENC(MZL4Yz12hqHTRTYvSwniz89q6LlOsG4wrCm94CFoJuaIROyDuofoj9IBPYypbVM3lRG0eKS36LNZH8tBLFyhZoqg4IkbCkgWG3C4VqlTQnIAbd5as+pLHDj42+ieJb6j0GLUo0HLf+CXhOsosUlrwJYgcvfKi+iFMZge5QO0EY7gNuDr6IM4h9HXP+1ojxVHgAxIkYwowLiVuE985PvPc9l3zaYxlrjbJuYXZfgAFciO9ulkrV9e9+QwTaLl9vQh5M4c/TL39ad887NTMiJmvw==)
+    password: ENC(do4r33MhEY1jEKO48IPy5B1A6fNW2XK2z29Abuiw/wjUh/8d6hOlY8Rvww+urSxKdjPFxvkjjfIJCpx2zwEjRQ==)
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          writetimeout: 5000
+          connectiontimeout: 5000
+          starttls:
+            enable: true
+            required: true
