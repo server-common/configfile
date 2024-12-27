@@ -45,9 +45,9 @@ spring:
       database: ENC(USVwN718gpJwTfTTJpPb+w8YadgJqeXUznk4+fU0MPHlKkLVLLDcSvwJtIArX7rR)
       lettuce:
         pool:
-          min-idle: 3
-          max-idle: 5
-          max-active: 5
+          min-idle: 5
+          max-idle: 15
+          max-active: 15
   output:
     ansi:
       enabled: always
