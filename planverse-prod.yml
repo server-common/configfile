@@ -4,18 +4,18 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(Xi4VAgprAB7Iub1P0qv/hdYsiVu1tHNGES1+B93CwTWXpxBrz2sie6wuhmtzSlQXz2dGra2NX4mY/5DlXdiuL5BwQd2ppmwUpe862vHGzRTOTSMC1aXwt2+ZnYCsOJ9CuV249uInLczWq6D92el28+sYKGQaNTVMa25aEH6cSCRREIiMTXaJRWDXq1Ogf/8J)
-      username: ENC(N/KaP8ADFFRlpVcdjfB/g9lGDpU+NmA3LXl6jlKDkR7fmptMHY6heSqb4ZgvFvS+)
-      password: ENC(RKcvVcGcJZtzuPplJtPW7m67Y7emTG+/LuaZ39ItvHTTedgLxIhkvONRyULvAnGV)
+      jdbc-url: ENC(ZBdazg5TQIKL0XZnx0oB9/CaBqr+ui5l2ZbvO/IOmEUrU6oYbCc/rnCTBGfgpWkLtct+ga/byh7rl9ISSJWxBwzWjFpExmct/6WUWJW8mWEjw64Zc3Cw2gL1972A0/2nIM5Nvu814SNCDVpeZRn07oR2BpZHK16MVDH8qg1agDfGWR+wlIQjaGiTvuJ8E1Yu)
+      username: ENC(B2cnecpk6z52RuvAN3LraLSce/otycLOeVv1rE1Bo5moBQXUwGvrfdxPuwbsjZti)
+      password: ENC(FDfAK9VHzG0sznINkZpTDUcIbV9/aqQAivzHYAKikSRJpHDH9aOmgr2R2d2Uebav)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
       connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(gQ+t6PudAcHcz2BPp4Ps5dz526QVHzsy93JDIwKgCx3SEqH6svRC7aVwhcAh0b/1MNY8zyAqpXaSLTUPHMDdvEOqmmMzk6t7sMRsWaN/DsYFOdoEnL789npZi/svO/lNXIQTEO/pwVNrv1FX8+LypreviRjdaZqg2Tdi9QL7UD7BKydUkjppETHIKA00aPfC)
-      username: ENC(ol7mAckJTVs+HWNzVYJzXeJ2xsTWVIo/d4k1nriSqrxZLOqXxNNhtIMw9chmZHYP)
-      password: ENC(ldlIzmaJhDH/tBTsacOQWVg3NJLj0famdmWobOjAV+MjhC9lV7sUQ14TB1Y94Ypy)
+      jdbc-url: ENC(Ow/Zf2EeW0j12KOMoKU4nAkY20LssRzFFJd/BzCpukgp+LVzPHluoYaYO6F0OOcnUczAoatr1jslkwFUcZ2nO/OPyFq1fjsk5DVWeVavglOZXpjfGEKvdGPkXJJUH/IKwY3Vw9+Qms2m5uQpvtF83gdy0ATTgcDrWDzLJXd2D2/s0rR0ILpW3dID9nJRhEgg)
+      username: ENC(SuaZ4L6pyzyIHMFS/c9d6FumKjR6gmmRSEub6Qa73T+SBGIS4BJFt9m0ukNF4+Pk)
+      password: ENC(iGLBy/3rp7WlwKj3rCAQ1UPlbUqLR1SnSY595nqIGenFRVW/3CD0uoLroKNtE4yS)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
@@ -39,10 +39,10 @@ spring:
           order_updates: true
   data:
     redis:
-      url: ENC(4NOocJncW4icT414//NhUwAdK1sdFeE3Eci9jwJExWOQtFlBielLtG45Q7KGN/P3wCjqlF3VDo6dqSxQFk03Qg==)
-      port: ENC(zsbLXaL/JG4yA5K+HmSh1giTOyfCfwZgL2HhW16ywfWaGtmnZuhwQ97gHnk8sM3E)
-      password: ENC(cNcPx2HYKJW6Vx/naGWVdbvF+wtyhPXQrWRN+fkUxhzZrCUTAp9K+cyztnL0qbjs)
-      database: ENC(USVwN718gpJwTfTTJpPb+w8YadgJqeXUznk4+fU0MPHlKkLVLLDcSvwJtIArX7rR)
+      url: ENC(+39TTUCys1jz93ExKpRNJ91lkX0i73LIIxxIJX1L50On0baK3Qukim2+FDDU6RnLV0EgAUJhyon5a4D05J1+iw==)
+      port: ENC(heAxKHDRqwFwNv6vEV8t2PnuOUFW1GQkSq5TS2IkuRDTbJKzBYfqXEmH2shcbL0D)
+      password: ENC(VP/xQOxFEJjlBXHyO7fuqO+V8Bd7yBe7wJeoC2U/DxPyCWInJykeeqEuCUMmWNh4)
+      database: ENC(oZgmOwExqZCCei2ZVV3YVqJFJ7XqbWEaUD4ZcKVA5niDjZnaBefzswg17MFqMfiy)
       lettuce:
         pool:
           min-idle: 5
@@ -60,10 +60,10 @@ spring:
     sender:
       noreply: noreply@planverse.com
       notice: notice@planverse.com
-    host: ENC(twK+inRNDGkGcfRoqLEJ1dFsjGnbgXOgq59lys7z+VVfdXgBXtcYUAlLS5w4q+2+q9IA7M+jXlDYTsBAZk03H2Xxx8+sILO/DcLDvA9uYQY=)
-    port: ENC(uqttfvZ3Irb5f0n95u6LV1/iuQSA5W27c6s0K6Q8LnhnZbKiqARKl+kzUPZNtOXR)
-    username: ENC(MZL4Yz12hqHTRTYvSwniz89q6LlOsG4wrCm94CFoJuaIROyDuofoj9IBPYypbVM3lRG0eKS36LNZH8tBLFyhZoqg4IkbCkgWG3C4VqlTQnIAbd5as+pLHDj42+ieJb6j0GLUo0HLf+CXhOsosUlrwJYgcvfKi+iFMZge5QO0EY7gNuDr6IM4h9HXP+1ojxVHgAxIkYwowLiVuE985PvPc9l3zaYxlrjbJuYXZfgAFciO9ulkrV9e9+QwTaLl9vQh5M4c/TL39ad887NTMiJmvw==)
-    password: ENC(do4r33MhEY1jEKO48IPy5B1A6fNW2XK2z29Abuiw/wjUh/8d6hOlY8Rvww+urSxKdjPFxvkjjfIJCpx2zwEjRQ==)
+    host: ENC(OAaJtinwZxPLnk6DugF75IcEVkR1wbKzOvJYbH29n/tpkbLKs2u4QCJGVhQr3V/NTdWLjkk7IaNcV1qxbzBDGYRAyHoNYoXwGSagGxd8DVI=)
+    port: ENC(Q0C9kujNa4lX8HUGRtBaQ9K8Mr6N9/OKRLW5eKq+A16ODi6DA+6aE1yGW6fow7dU)
+    username: ENC(gCjIaidwMKVUViIIOJu9hdtwcKpNeUaENWuD3/4FnxLtK2KNt0yqH8oMT2gkCERzFMwODMqMGCkh64K5v/UNIVzUAqJ7xjzoM3hrfagkEJqaFGQ1Yqdsr0+OWEJo3HNLDmav/Ly+ZcI0PYYqEWGuSib2vD+qRpS8G04zKfsHwC6JR1HFrXr9CqCGsqxDFl5YOYOohVgVQPTlXvvMNVQHtBPEI6UtSM+/yM+s+c88/OVGAc2TyxRa2d5Z/oXYuEEbFqjIA2qS5ZkG93X06+ZnDg==)
+    password: ENC(jPBBKsb6AlmkFVdeDXICBZpN3WYMzX8TocX0qnU/Y0h1iDucfNKlCk00e++uWtbfzWoOyBxjvlI/hRmoy+hoeA==)
     properties:
       mail:
         smtp:

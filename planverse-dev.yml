@@ -4,18 +4,18 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(jHFiVLUPHyNkEbGA8jI2MQQqbXj0bd+1Nk72PaGEoSJ2t7Mf985Dp+QiJNyfjag9xEa3zlOSoYVbjfwLfDKVPdk7XV8uz/yzo34XFyND4SQn5U7uIqOP7Jaw2NxpKSn5ZBlQislQG/sxM3sQIeisIerrgsdvJXzNXH18LPRNYbdyeDQIQnonk5YPTFEIr+ndNU/Fcu2q0OAzLhqmAOJMoA==)
-      username: ENC(MwHJAeoeVoDDtlIxHekS16mhXYkn/inXVkCjhDXHo2tfwd9S9FWLh5WEH+b1Ja9e)
-      password: ENC(1oo9Xs4Zg92gXG6b/gNhV06BrLCPuO32pBhNz/vjaS0Pn7qe4zAoaJ70XLi7gyBa)
+      jdbc-url: ENC(SDeHmrLB4uhV5+8r+NF5MSosEFPKg4puOSOpV/izCdyGnighqg08wrbwo28VagGCbOv0J4Av21jndxOHGgjHmzbVQXSCKcQ2T6rl/dkpfuzDB8Y2rRbteIp7WSXG36u8xAKPx81+AmLoS6BoY1qywgtht74iTqwU/gMRfaIYmtYo4O7Rvgbd4Sv/1a3uMuCJKyXMVML4UTK7iRToZBNOZg==)
+      username: ENC(yZ3lIExkDYVTWybNc0CvMDuAoHpBLhf1EKqFnSuaa7snoNIeQmT51sW5n8EUpozp)
+      password: ENC(VmGbau2Ixh1xxwUqFRfWudQLdYtOtR3BlPmJovqJRAN8pW4rRtcQ3j6Ep/lRufip)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
       connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(0Tc7Yg83FuN62SDBRAhRp1gmFy+ZASahmVAww/vLqS24KnJF/p2Ypkz3/S1ztT3gmKO5RvhXJv4g+j8vIvIiCd1nqz9r+KosqYk1vlBaix8jfLGKlOsiGa8GoqZR1ZFQxHq5s485Dj2DtE4JMmD07K4HWYfD8SBhfzbokCwul0T94y5GjmE6zP1zOUmkGMmz4lG268uBfLPfMMWZXitDqg==)
-      username: ENC(8G6siNcL9FpVKCc6A3tdIqDwAqyDet4X2SVkiC+T6w/tDjHBIknv8HNwRX3CBUxk)
-      password: ENC(RmjJc5Y/2+EbukU5Uo9qaZuL2WsG4OXrGWsmx1Te4RTiJt7pAVndcxAHN51+vnXj)
+      jdbc-url: ENC(cpbtpk3E60i6kOCUgD98v9T8dg2HSncnuZSv3zNsKbOyUFoVKV5pVn6dsWq1FW608Uo9Wp+8u1Cs+s7n04amqK6OYF49yT0RyDJ9YJu74HtlZZ7Hl5GB2BTfN29D2xMt3mrB6Cbr6uP31jYfp3UqhAlXJ6Xfqn10N/LY+9gwyOPhdigihrhwWC7p+KStWt3nwYEYEYhXta11Vh4TcIUhqw==)
+      username: ENC(GOoaIYpZeLPHGtshtGQc+g21qnjv2mGE9JS8KEytV2Wb6qEyHIv7Rrr2EAH5iyEz)
+      password: ENC(G1OLTMCzztD9WTeH/Uyc7Y0c3zNqrwnx9qCLww4R0BjXQEvhMsiu+65OEGLBYPjK)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
@@ -39,10 +39,10 @@ spring:
           order_updates: true
   data:
     redis:
-      url: ENC(I6XfGk0rBIeApf9LIgK34MPRXGRSU5c9EUIaMSr7SuMHVZP+bwMzOcnR88D1Ot+MLSqE7f0iV5T0ufPtbDKslA==)
-      port: ENC(0hBOc4TdWHSovmPu1CYE9DTNSMLt06LqftAS7LW71Dxql8nPOdP1u9bZcUi7WK5u)
-      password: ENC(mw+/RaqdoX1c1GJfT7DdWk4UOC/rcr8fq/jArAUMzGNNm1cdAJ44Tg1nsiLasfpp)
-      database: ENC(Rl6wjpqvitgxYH4Vb3n8npalPc8HS3dPn9pf5Ebj5/wdJRZsR4qsm6lAZ1Od4Ltc)
+      url: ENC(vu4/N7gweGgsQoT80iaEeHo0dFwV+Hrk6vchcBbg03j2aFy9aDjH9mrRFO6Z6Ka59kb7/6im7Ux0CI9Nn6cqaw==)
+      port: ENC(Vpea0HzvzcrWOXezm0YA2IQoX95mHoybAAYV6wZbKBXXUJBoXigKBe96fxVqlq+J)
+      password: ENC(i7lQfaesQH87yZKnnDrIHI3YbuRJr98ti3df6MEZf29pI5e12QDGNa5oPYJPWp5m)
+      database: ENC(C/NetNqvzS3qHLlYeq+KnDgwDXLUXFzuSfetTYXZYWeYF4x0KRVQLn/LI1ikjRtZ)
       lettuce:
         pool:
           min-idle: 3
@@ -60,10 +60,10 @@ spring:
     sender:
       noreply: noreply@planverse.com
       notice: notice@planverse.com
-    host: ENC(Js7fyPyjXxJ97qPn3rhKnVMvQ0fxkFo/pVwSUdgTpRE9hZyiXcycI6SYhsSIN8zH94Hr3D72g+/youtkcmSCPYjkn0XwpU46uobv9BNatj4=)
-    port: ENC(AZZqCwSBZ3iJRAWTbsQB+1RRJapwB4+mDeIm1iuPTchrpVODq0UQxPDWalG8cLN7)
-    username: ENC(J6tK8WuS25DlD5bkwpqo6D2AjHuVdHpsspgxM+B+XPEfBpOs8js5XXpfp7NFZ+ax/fycVrxGDKBXfo+29M8P82HpddCLf1h3xjpByZTQv8EctkVUXu2KlXqPVpQeCoD0rChBiOniuZtj65nhTmntVuDe55ILtH/HBiT6TErmqLuKd7Vt8ZGJ4k/BP4KL3ZC8bikRcUNfA7ZU4tcGyYJJ2MQS7ua0WRlXVmRF5Rs9kJ4ie/QMe6WulFAK7chYVJjYNV0utM2+ND6q8xBZzj01Mw==)
-    password: ENC(YNi3rwxt3Z1dmKKwkmnQV1XX4J92Efbsxw1CxmkiLilXBVAPFHIKYbi6AcwnVrbHrCYa1hlxCIFHxH/6rPB9Iw==)
+    host: ENC(eDZ3gpr+PB0REELBKA7+8LJiy0ZfJ2t2HT3e3r+qOv6dBc9UhrPjPau5zdZHWOng9vuAcG0rUv1I80xytbj1nnYY7EjEKBQa6CB/DDQFRls=)
+    port: ENC(r6oTHLv8k781QM7sbWRltAig3kE2f1c/j/6pERlbWBNWLANoe1aNiwxIZhbyDQjb)
+    username: ENC(UE/mXwwjTuIpkEAAqUvFtzpWCfzjqQ1tV63uC5olJ/Z/UfH/ucBu50cwmEeXTAlXqaBu3zy+CS3/VD5VVbpGk57XYYPb7VwVYZVkZA3J4H7sUt5mNhlshNiVDpmWSBH+oZQkt3+jUW7xaqBCU4EqdeCaVRC6v27Cpb24thJCWXQHNk95tASyv/+SqwliBvRr8jQ/3OSLhN+rd93L2tRax1Hy6eUI/hzheMDHjfkB5EdGYBwwUu9NtKJQr2SgSjeeW8lkjiC2TS9kvTMs3lUG5g==)
+    password: ENC(hWGSS6texTgh+bC07j9RB8sBTCWq/l7DP6xUbwHilZj2ZTDdEHp3SyPYXpwK/bQNyMVyZkDXhWEGNGhH6RnXmw==)
     properties:
       mail:
         smtp:
