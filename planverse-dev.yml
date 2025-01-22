@@ -37,6 +37,7 @@ spring:
           batch_size: 100
           order_inserts: true
           order_updates: true
+          time_zone: Asia/Seoul
   data:
     redis:
       url: ENC(Vd0pHp1CmE4yvHU2PkoA5UVArDWHxUX2ID5duz6TjTH+SU0ImQY9fuiS9O2VOoWnDEbJE5BgKlmsL0s6sS8FZg==)
