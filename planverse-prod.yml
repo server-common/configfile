@@ -1,5 +1,5 @@
 server:
-  port: "{cipher}da4b0896224d85019673d3437f78d0693dfc26d197c10f483057785e4e911b49"
+  port: "{cipher}9b921918658c9a0c374759ca63e1ec4d54abefc55b43ef8346c3765e4cd5c33a"
   servlet:
     context-path: /api/v1/
     encoding:
