@@ -25,18 +25,18 @@ server:
 spring:
   datasource:
     write:
-      jdbc-url: ENC(JP4xHZybknGn4uJpPkyAh7SzPMZrmfztmOApfVodH4U8ShEFzgs1o9tj/NqwnyItqKe6J0RxxROB3ngaycC44FQHI5t3xnQhDkfj4viMX2RGALJTH00rCMFiT2fewPZnl9KW/2f/U4na/UQ3v81dyGtKMOM5H32oqd2XfSVJ9zFql22a7jd5IeT6iTema3jy7QytT2i5/b0k52BGPoSuCg==)
-      username: ENC(DWAZZUpWz3+nlw90onck7T3MyqpsuChnqDQzEWsQ6Nsxk/7BIZc67/kkPKh0UR0I)
-      password: ENC(7nJ+u81lpvq1cif+dMAVLEX2lbMoW7hvbBKc0UKraB5ccRFffMAyApP+uswDETHO)
+      jdbc-url: ENC(lQhIYr71OPhYyUCZcCXbOGiP5GIM+TPoJvv8KF/9TYvT95gmSt/EGRzeRtpA0aTtAPXToTRVGkRFs4Pq8ewUJDVsNapmX66MJt/pq4pGdMXKmQjJ3kJvH90yxzwyvpsYWOt1tnGTnGrGlJ3Han7+7ZRroxZPg80LKkvaAmKc3KU2tyPc3V1Zx1F++9olQvFZT+1DqlbrixdzKTygsVxG7Q==)
+      username: ENC(k5bAVpEHhAGmWqbU86CYtZP6pr4IaUVJLqWuC7iRVQp2xlczT82hthre5Xfk2k5T)
+      password: ENC(+m0TBMyoC0+qOSslmfWrJz0G2aKgQ3yzn7i4YlcVgbjlLZDQHCxmwTSpKHp6NcVA)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 10
       maximum-pool-size: 20
       connection-test-query: SELECT 1
       pool-name: WRITE-POOL
     read:
-      jdbc-url: ENC(flcqQIizaCx1s5v4xME01gq23yHMluKg/iLpEChf0I3vlpQt74qhR57d0HYxISMzLfHgPcGVbbzeEzLkoSje3PSksyOiZ8l026ZU9VAK30Xhn8g3wh9u7Yu8O52tnzeLh/7QusB5IL+5uyRM1eWdnmYZKqx5YumTbgnKsJfLunF1WMmYZ1M0Uw13enKS/vqROwWN0wgED8ZOg7cYzMFOUw==)
-      username: ENC(d+dloJvpgisw1AhrEoSv4/3jfoQRNvBseXamYRDQgD50tAY5/EIZS+HvzCPnkkKK)
-      password: ENC(82VlyfKGdYxhpp5hJZDihXtv66e0oKAA8OtVrg5fX5icqHtG7b7RBUROwrN1b+8k)
+      jdbc-url: ENC(apTz48ANnS8h3Fv5vqbH84KxUSnydSqCXiiVr9m/VuwZs0s41QSgX7QHRHEKjcNAxzTZ/Keb0W9JWZ39JBzjJtmPWlZPY81A3zoEsILkdNPzEtaVQ7o8ZcCd7O6ScySrQa89npJGgALebgz4dgTIKDlhBSC4WKRv9GNXh6DgJeIle1At13gzehXn212wAMLQYpN2eoXWPV0TsP5FAuSeqQ==)
+      username: ENC(G3jhxpBFCOFHARtMjrrVTHNSuORC7kfjZx/JP/8pzkdqOqU2xFtRH9vuTdH0MQpA)
+      password: ENC(09KiRjXPs3vYcjgnb1z6tzpUs801Cklxg8wZ/iOkH8eg+uMOQCTGfqegzzhDcXfm)
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       minimum-idle: 5
       maximum-pool-size: 10
@@ -62,15 +62,19 @@ spring:
           time_zone: Asia/Seoul
   data:
     redis:
-      url: ENC(9G8n9PSSEwx+dEr6q2yGYKVknFN94xwskIH5wVC6E12M3asdIfyfE1G+lmKptKNfKsDEh4xC/ZBzqUynmhadHw==)
-      port: ENC(cZSvx7DLdS/Ev/yHWrlDjxpDHDo3w7OPxDXj/2XTOyp0RPSVUUasS1fj/YOyUHAz)
-      password: ENC(6dpmTWSo5425dMveUtlxZ3Nup4OBiaw9HNZGDIwS8pSnufHUJjrWe1JCWUHwAJd0)
-      database: ENC(Xx4JIa8tiJnZ4R3HTYx+oJjOp48LHqSdSub1Bs2+D/2r0HTq87xcb1yQMX3dnO5t)
+      password: ENC(jTrz8f0L8QX0Xdj08rDB732qZ6BJmNGKhtmk+3QzMpI4+1tf1Xo3F+dpKOIhxyvr)
+      database: ENC(ctu7kjwShStd78QXG1Ombj0P41q60+WDUl3wABlojmayzNkxf+t1OirJiSjya0EO)
       lettuce:
         pool:
           min-idle: 3
           max-idle: 10
           max-active: 10
+      sentinel:
+        master: ENC(2AGUYwH7TdbbG/0efpbuJRbKAppH8GylzVN9+5ErG3G0F5XWr7GdbTjV3EgrDFOu)
+        nodes:
+          - ENC(Qhy1E9WtYyoEnGmBiDQhPy6L+S4mNVMI9LzuThgYbfOxckNAXMbOB48i9QcS65xXL20+fdmdfT+B0PljeaWVzw==)
+          - ENC(xdiGD9lBVLiMJmEyufI9SSq1YbXD+RB4oiwLpuAG4RUkY/Dsls/msde5R2HiDgN9Zl5UKcmn0xFXoeFQ/+LG2Q==)
+          - ENC(RfdwYMjsdgBBItk1SEyfCZfmrcmqgB83a0z7IH271kwpnAf+VDDCekcsEhgAccKhaiJlIKekG8f2oUuI9tZdXw==)
   output:
     ansi:
       enabled: always
@@ -83,10 +87,10 @@ spring:
     sender:
       noreply: noreply@planverse.com
       notice: notice@planverse.com
-    host: ENC(CrHfjR4IBSl1XNLmGdAUh3C1SPLl1D42SR8tqpn4zCWjbAgnzvD+eB1RPFVoNd52SqyXdjF13iwzTi0Ti9n/QdzmxwAkmiry8bDTRxaTb98=)
-    port: ENC(yt3PjedFTmO4/kaCf48UucYswwJodEuRCE1imupbaTVw0a61N9aUYLO8tDIyJaIA)
-    username: ENC(RSBiHIZtma4dTesUhXqtzdqqfJ/Y9nmb4MrJ7cBRnTkYEsajUQ+QUbz4oKjz6isAWnRIFCmWMh/G/6Qk8RXM2M4HrzogvyptcqUxshgArr9MaUu7eZ33WyX7GReDxIB7Tctj/T6tai/SBKFu8xurKAE8XfgSq/F0zytOO9wS/Yz6dGeN+Ry6A1HwkMjw3ruc2Qh+IPTQ+gSOJnRjwd3igzafHLtWYtUE+WH1nsw2Dalys25hjSW2+YspBce8qBhuDT86xpjGQQ35QXpuZfbqcQ==)
-    password: ENC(5XkYf1CSZYPfYrZGf9pkPF1yuCQ4qYbctSujBlVinGuX+bmt2a1kqF+lVUgg0NJF0RFsomjB3gebhk1NuDLNWw==)
+    host: ENC(I+YX/N8MKOFveG/pV/VH48zuwC6NhQcb3TEL93QyuMG8TOBJtX07AdxAde8Ba1iSmdTDh+7/J5vM6dcw8mGjSXEb+ykX1EyrSBBECAEUu/0=)
+    port: ENC(xejWiJoAUmgkKn6XdE9k/cV3pxiIzCQ0kzdIc2voUYXtEPaaYmkF5UjqYkI5Lj+x)
+    username: ENC(8hvKhr3RrdTygjctTjP92ZKZnywBCHFFAGSMHw0X2zHTBR+vhsOOIp1gyp0weOu4uiWu63z1jq5ty7hG5AB7RejxJzRSzHPTo5CcNa/yAWrlV2sCPp979U1QB0snSLirvnnXQHYBeIW3C8nGroKsekLa4itH37bnTvxxz0+0BvYK1MUoJWSCyAJKFI5fh0y54EHS5KtgQSzKQZAm/XOasHiak3ffrtOftu6EKeFpxpqVXvHvQDAHJww+DFxK0Ke7Ub9YdCbeyy3W4RW8p4+JuQ==)
+    password: ENC(JKbDArtKbWiSWknRLPOAbi+nzvNC49lyZ5kVeOT5gVOt0egJuA+Mnqk3RLEsU3dAO1xBo2f82i+3lUHVs2HyUg==)
     properties:
       mail:
         smtp:
@@ -99,15 +103,15 @@ spring:
             required: true
   aws:
     s3:
-      accessKeyId: ENC(iwJjk5+1f3dn3fVPRaECIz20SHCT0B9+wYLWk0Dj+YkFQ2NgdW+NlExcEOLKgib8rHTc0r5yW1OYdsiOVtvjvkyXeZvMLb9Zoprirf/hFd0=)
-      secretAccessKey: ENC(iWoKYddIFGZ1N8Sovw/irHGvSbrTM5NY1fpVJFkDQFzWN6NzjysdxYJTl+/zsEdwHu4iyy8/ACq9eAdBJp0mcktuBQElBpb212pOBpP66O5MYAJco/9IRoz09swZWrs/mWOFhelkmb3js8rZAYM/iA==)
-      bucket: ENC(HZwvAvfsGZECLAsyJRDueBm+zxSOwrn0jdsTISRXzeuUuebt4pV7U1jcbm0OP0EM)
-      endpoint: ENC(0SwS27QxGXpqm3bChOhl/3qJkVj2cmwVrvfhV1Uym8RWsHYgWp/BhETQiKIv59TnK6a6VFUZ3uhiwFwQuyRlZ4vHtdsGd6e+cFRl78H2zFeGs3qGUjEFih0AXkzCYrDaNVEvR/FJ0+OAv1QPd3EcNg==)
+      accessKeyId: ENC(P73SbMQbdN217RxarMJbfrYjI5DDGEPWYtRwEp0nuGRMIbzM67Lv0/dgiUipUjuRtEt4SwvnbTP/8iepiegZxHCi489kB4ySt/zn9l7EpHE=)
+      secretAccessKey: ENC(IwJ5l4ejpX2Lg5ZLwPc8J5auiQvdMq2INqI3JebLeX9EXTQ6yGZMlGkGycITVcRRymQhYQNWq+/RAJnuxzXjA2tXsBLFZLqFv6ZVA67v7wWkch/3f/QmqMakDLOyh1GyRBHlJx8bRjPSHc25Bvmvxw==)
+      bucket: ENC(QESl9rqavIx/ycUPfebe37h69Jhk50VHvjTmvQlNLewfZ8b2/7d5TMtoeevq3l7l)
+      endpoint: ENC(sk9myYmkdn/ew9HP0i1xDzZlg/cZa3LViZGFO01S6d3hM1vzO59HDfxp2AetdkNikow/Hlj860OIcBpIm1DFvsSOJ288pdSwnfCyiHIEiYgoRV27OaIC8dez7CUw3UCyUHkeBZWwpXPLhRwSmnij8g==)
   minio:
-    accessKeyId: ENC(fhZuijRkz7qhs+qzzDTn/u9IkEeheV9rZ5g86ii4Hxffen6/DUu+tr6D8WroVXN1AuSfpRNedTFOevGGHw3tfQ==)
-    secretAccessKey: ENC(cdo12zo1sxGISZFH8g0B1TKwh0CVDfjxB3loO42Yz4pf5EzCOgAO0x5lo8CY5YBOz6SJV2MG/1zDoPeprDSXozGuKaBptI3Bu8MUrvUW1HI=)
-    bucket: ENC(0MWHFgc4bRENV4LUxtI/F2JNNcZi6uIuXFJZ15BJdlNdI/1MHPmCnMjvaDHi20Rj)
-    endpoint: ENC(zY0Lp+MuiPafjcBsmBbNbsTlPBO5CwkhVTeHTuyBnTodQd70perG3VxxFQQYB7FXcdoD7jtV1+1zXJo41Oh69g==)
+    accessKeyId: ENC(ffHTrzn8Dqr4BCWb7ddztZjLoPafc7qlVAnI/ODNuqbxktrR2qhqYUyaV3qSHhtQYeY6QtfarVW88Fe1W+pwgA==)
+    secretAccessKey: ENC(/wgUyGyWKMZHClciOkaKuHJk2ypWNuUIw4cQPPUAfXaMgZdKSlt+3VX9X0zsGNvsJ8pkmAAlY3VlcCZrDi9jF2JHuQe/PA3Om9id6bTZM2c=)
+    bucket: ENC(FgHx4ScnGETRpUZRArgFqCGEh0Ch5YWJO/GdstAqBBBrDCZQnicjHegUeB3rKLuQ)
+    endpoint: ENC(omaXSg3dJvYITxJj8j6yC1XMH0IP8NKwvmVrrVO10frOeYS/G/TjzMAQaYZDi+Cuf+L9j7KBbRwAbjPfVPM9NA==)
 
 management:
   endpoints:
