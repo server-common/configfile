@@ -1,0 +1,137 @@
+server:
+  port: "{cipher}1094924401633dd7f7fdd045c3a92add66d6620c81acf81d3f0a91c4c4cefe78"
+  servlet:
+    context-path: /api/v1/
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    session:
+      timeout: 600m
+      cookie:
+        name: JSESSIONID
+        secure: true
+        http-only: true
+        max-age: 600m
+  shutdown: graceful
+  error:
+    whitelabel:
+      enabled: false
+  compression:
+    enabled: true
+  http2:
+    enabled: true
+
+spring:
+  datasource:
+    write:
+      jdbc-url: ENC(sS+lQ90clsgqI5yZmU5RJN/9rrnOlvwgx5V+4dSC7qX0ppe+99zXEDJAs+OiEiDthO9wUvfjKTC3jhoya33VCXYrCRROk3e37o4mVKP9RejFSPjv+52vv6wT3w8BNm+0OuPnQVxKXvYVJpSitxln8ee8i8BCg89vvvAYXG7DPcUkjLPE1swGbj1Uatt4DpJj)
+      username: ENC(8FQO3vQoj4NoFlNapTR8KVPdP0JPM3f2vqeygvIxq3J7NkOnyCpseSIFPEWvaDKJ)
+      password: ENC(2pRgJBJga5Md1YQ8xWG8PdjQhdAKEaJzenrxFuodclcKGZNQ1m1zOKOL0qmtwr7s)
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      minimum-idle: 10
+      maximum-pool-size: 20
+      connection-test-query: SELECT 1
+      pool-name: WRITE-POOL
+    read:
+      jdbc-url: ENC(58fVSfI3hvi8gwpO4bce6Nt7Nrt61Pim7RTFte7Uo7lXOXzW46gYwFee/EA2xB+gAD3Nj1+0yZhMzGK9n34vIah9fD6BkbkFK0rYnye3FgMKI6nSgoNNxuNimZf6glhkRBj5xFbAXyYR6NSjrXMV0tcP8EtecFqs713XB5QDBcEuE72t0NSjwHLNzHTXv6II)
+      username: ENC(aXMx9iCSWTR3MmDDfy4tN3FK5lKfcpuwnYzShA3IHO2LocumqumjLgQsVTykVCS9)
+      password: ENC(mGKwe6Iizi+jITWS0dMGoBbpfH0pd1PZPT0xuXD8itd92XCpTqc7SryN2wVFoW0+)
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      minimum-idle: 5
+      maximum-pool-size: 10
+      connection-test-query: SELECT 1
+      pool-name: READ-POOL
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: false
+    generate-ddl: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        naming:
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        format_sql: true
+        jdbc:
+          batch_size: 100
+          order_inserts: true
+          order_updates: true
+          time_zone: Asia/Seoul
+  data:
+    redis:
+      username: ENC(CzROrAPGmY4FlDGaJGb485uiwuuKJCwSHVuI1PtOs144fiDe1Ovj8Vob+QGIi8cc)
+      password: ENC(tyF99tCds8gY9RVpJ0oDv1d5DmjgJiw35pcZNgbUySdwCvFrbsOcXin2sFjHhBVp)
+      database: ENC(bbhKcABqMBIeXDM9lY53nTSEcjzBeTsXlUUggzcHmULiDQlpQSnPAa39QL2msgCx)
+      lettuce:
+        pool:
+          min-idle: 3
+          max-idle: 10
+          max-active: 10
+      sentinel:
+        master: ENC(kLsVgqyP2/EWVr5sTeolZHIGj/SCkftCc92ZXWAQtNWvr/anDdIsX9mjRBoODTRP)
+        nodes:
+          - ENC(oRKvn7DR7nziY99CnLVQ/qiHA+tDE6i3eLb6VKvRmKnsYhrep5H8RyWkvL4GXmJUAmKGeFw8fdSsn6p9kxWG1Q==)
+          - ENC(Uf7Q0uf32vEvsXRapNhPrAsrmkt3apTZS6HGtUb4n4nf7xk7bAC/CjnRXpgpzYf7sGHqGBrC+O4QGQXP2UYd9Q==)
+          - ENC(Rl/CB/UDZADo6SM91cxRfDkhxMAHWGhtUmTjosFyHaTe9dMSb8crQVuBJm6FSp4EROMHFyJ4fVwwWr0vpmB3tQ==)
+        username: ENC(sa7bmrOY2R8wzGFJxSJPlzjvVJcdisZWrzXE2/Wi2Y2kd5sDTtMP6co3M5RCRtLd)
+        password: ENC(zrnryW3gsUFGx0S4IoJI79PVhpDESCcQqIiLylw0bYa91/YwRPYl5Q9wBZETGrO1)
+  output:
+    ansi:
+      enabled: always
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
+  mail:
+    sender:
+      noreply: noreply@planverse.com
+      notice: notice@planverse.com
+    host: ENC(zGTSsET6Lf3ARyoOnJOQdjzgAxrNhp9k2CuHwGVeVvsIaJMOVJlGyf/BASkumEBp74icFX62d7M9tlj16uA0xbW/k6j6H8o6c59bBzg1Y/o=)
+    port: ENC(Etj+6A9f2kIJlAXayPZQpOcjSnD1SYp2S+YeAXQkLnbNB6iHcrgjN7mwJez3tEid)
+    username: ENC(a/YyckgIrMV6K/65z4sbLSrYI4qQx5JlQtlBVdzpXfeioYJ+E98oStM351+r7U6y75QfIlJ/O5MBMjPfHYd9e96RW40Z55UBdKnMjimcE83NA/y0cMgXqdnI6hMcauXL8qpwLZHQfEye/n5tR/zWP1PTZujoM7IeRImrD7a+pFW3TMBdp1O7/3yNu9kuVs6R5XbfA2hS2+JzgIynsU6xYcFA1K4u9ZS4NEkexmSWjFl0chd6vVppIPXGiqI7/Kre0iFfxlL4b5NX50dGstyeyA==)
+    password: ENC(3pXThgRLNv0j0OcbZIbokqzXlLN9eRSBsyUvkM7cDM0n1Ch/VvSWuvbiCGkOREV+ua3BroyYZHYuCJFmuZcDVQ==)
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          writetimeout: 5000
+          connectiontimeout: 5000
+          starttls:
+            enable: true
+            required: true
+  aws:
+    s3:
+      accessKeyId: ENC(9yuF2NGuYCBv28XoRqYJNDBqseOgakM5gpKsDfKkDracZPg+h1vo5LYCgyyJCyp/+mz4b/t3BluzTISaUeUm4gckrX5pHjfxMqn3Qc95/OE=)
+      secretAccessKey: ENC(GhZivjkgT4HwUDg5wPgs2sZRr7+pjOHmX2NyMoMXOahMTlDHpN7DLG9fEFHhCRMFnnHdMo6aje9rYsPp5XNECO0paBVAWJ9Io3uxYwttjzzg0KutNxipEDjV6av6Z+4dLePEPjPDI56lsnD9XZXEBg==)
+      bucket: ENC(Gj/8n7AKa8Ixyt+OIpDL/Ti8wqQAvp3mfktmDBuxfVv5JwhOi9+q9MYVNAD8BGCB)
+      endpoint: ENC(vT3z3uJ/oXSQX2F7YuPmu/tMI4UCKlP6zl9kqdSTmVg3AOfjsQGSMzLjz3CxhJakuYNMINnnlMaCB3RMwNBN6P5UXr1i7zEjKkbMx/tysMirWy019QPUo1YzMIsgYbuPTNUCUar4D9ChqLGGUmlnIQ==)
+  minio:
+    accessKeyId: ENC(MC82ZYasoBrdoB+dy2f4HZE/+ATbn3vjfVnmNgohqrNrAbFg1I4tv+Y+P9VeKNPbjy0LH4pYdgqJywC8SQqPZw==)
+    secretAccessKey: ENC(4LW+vPiHW6gDf3ucZg4kqJ+6Wy2c+wWwoo4TiLwDzI3G8yXojry+Zsk7LOkmtveQsIzCrbtNcwqTkKFxx6cK2Uv802sYGuV+2Y44Dov9+CA=)
+    bucket: ENC(KJXSWdNaxjqNpp/3wa0PV3PLkAWTbtDPYzXdbyJqCv6EUd2rGeklhNpPgU94Kc/H)
+    endpoint: ENC(HJOOTGSXD9FuXGjOsg33KVkXdcn9bwoPYtcSL+HcHhsCw1h/SjNEt6VTs6rKI58XUyjZFQmanH+W1O9lUb4pTA==)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      access: none
+    health:
+      show-details: always
+  metrics:
+    enable:
+      all: true
+    tags:
+      application: ${spring.application.name}-${spring.profiles.active}
+  prometheus:
+    metrics:
+      export:
+        enabled: true
