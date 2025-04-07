@@ -23,6 +23,8 @@ server:
     enabled: true
 
 spring:
+  application:
+    name: planverse-dev
   datasource:
     write:
       jdbc-url: ENC(V4tDrH0nI0gP3WFUX5slKB1aTNLaKk56AtaOEzidxSr4vJRIBsaKaN13T/KRoIw+ujxgCGE5CA8N6GcxH4ahJBb512CjHnl0/1Y+3X2nDzymW3P+bdizGCnXYWsB0M/ermmU3p16PJec5W/8n8bxKFqjgS/F+gNE7p9eiBCnJ7DjyNYVcQ64gxWLVzm2nBKOCpcvYKvlCl//K/VI3kL59Q==)
