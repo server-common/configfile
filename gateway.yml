@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: planverse-dev
+          uri: lb://planverse-dev
+          predicates:
+            - Path=/planverse-dev/**
+        - id: planverse-main
+          uri: lb://planverse
+          predicates:
+            - Path=/planverse/**
