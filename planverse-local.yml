@@ -1,26 +1,5 @@
 server:
   port: "{cipher}1094924401633dd7f7fdd045c3a92add66d6620c81acf81d3f0a91c4c4cefe78"
-  servlet:
-    context-path: /api/v1/
-    encoding:
-      charset: UTF-8
-      enabled: true
-      force: true
-    session:
-      timeout: 600m
-      cookie:
-        name: JSESSIONID
-        secure: true
-        http-only: true
-        max-age: 600m
-  shutdown: graceful
-  error:
-    whitelabel:
-      enabled: false
-  compression:
-    enabled: true
-  http2:
-    enabled: true
 
 spring:
   application:
@@ -117,23 +96,3 @@ spring:
     secretAccessKey: ENC(ISkVlDKG5tBZsUCBz50GwnfW1Ly7FTyQ/Fi3huDjvgVkC7vGAJVQiMEZJUNVsSEYtAsyJux26dES5JuO+UKc34l5IS4Tv4AVNLjXDLN3MyY=)
     bucket: ENC(REFgeHg12w2Xn078YLl2jpq0HH15V5RXe6ceiwc0FN5Y0T7IbQuNNuDlyJYRof2G)
     endpoint: ENC(S0S2u26cUj4ztHnREZZK6GS85p3NimpNcBDhz2J94c1mgTNYPOIf4W9kcAxRirEtE52Uq24/AVhv0G/lu9UpUg==)
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    shutdown:
-      access: none
-    health:
-      show-details: always
-  metrics:
-    enable:
-      all: true
-    tags:
-      application: ${spring.application.name}-${spring.profiles.active}
-  prometheus:
-    metrics:
-      export:
-        enabled: true
