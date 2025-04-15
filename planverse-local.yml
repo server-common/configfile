@@ -24,7 +24,7 @@ server:
 
 spring:
   application:
-    name: planverse-dev
+    name: planverse-local
   datasource:
     write:
       jdbc-url: ENC(oovAzPkHoyaIyUx5Y4aZ4wMK9Rfao5LNXsEJ30CorbKL7bqbkQ4kr5Sp9krpEpuY7Z+YcNlycXVkHkohG3tSGawaUpw9taxozxtbhHEssNm1WY0aTpEJAijfLcwIfQkNcfjilLl0JNxWsMiOIfXZfj5M8ksYOf1uhRXqOaWrZB/dgm3frCJ34O8g92/RfZ+Ar8GdLd4OH+EZG4Q3DZeqnQ==)
