@@ -3,8 +3,6 @@ server:
   shutdown: graceful
 
 spring:
-  application:
-    name: gateway
   cloud:
     gateway:
       routes:
