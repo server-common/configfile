@@ -48,9 +48,9 @@ spring:
       database: ENC(VqCYG5+15rAvRoDK23+oi92XCjtzhYoAd1LDNoI95iyZWrx77UIVlDDW7T8bDxOr)
       lettuce:
         pool:
-          min-idle: 3
-          max-idle: 10
-          max-active: 10
+          min-idle: 1
+          max-idle: 3
+          max-active: 3
       sentinel:
         master: ENC(IkE75Kbi40USGJDFOGVgnqItMpUdPqbtTg2Utw7mOncWeHZNpxewOkrzK51LJbEv)
         nodes:
